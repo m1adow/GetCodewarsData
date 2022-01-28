@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Put nickname below</p>
+    <form method="post">
+        <input type="text" name="NickName" />
+        <input type="submit" value="Send" />        
+    </form>
+    <p>@Model.Message</p>
+    <p>@Model.UserNickNameMessage</p>
+    <p>@Model.UserNameMessage</p>
+    <p>@Model.UserHonorMessage</p>
+    <p>@Model.UserRankMessage</p>
+</div>
